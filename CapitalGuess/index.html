@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<html lang="eng">
+<style>
+	html {
+		background: url(butter_pan.jpg) no-repeat center center fixed;
+		background-size: 100% 100%;
+		
+	}
+	#mainMenu{
+		font-family: "Comic Sans MS", arial;
+		font-color: black;
+		font-size: 24px;
+		position: absolute;
+		top: 27%;
+		right: 25%;
+		height: 400px;;
+		width: 450px;
+		text-align: center;
+		background: url(egg.png);
+	}
+	button {
+	font-family: "Comic Sans MS", arial;
+	font-color: black;
+	font-size: 24px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	}
+	input {
+	width: 80px;
+	font-family: "Comic Sans MS", arial;
+	font-color: black;
+	font-size: 24px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+	}
+</style>
+<head>
+	<title>Leo Quint Games</title>
+	<link rel="shortcut icon" href="world.ico"></link>
+</head>
+<body>
+
+	
+
+	<div id="mainMenu">
+	<br>
+	<br>
+		<h3>Enter Program Name</h3>
+		<input id="input" placeholder="..."></input><br>
+		<button id="menu" onclick="selector()">Cook</button>
+		<h3><div id="result"></div></h3>
+	</div>
+		
+</body>
+<script src="jquery.js"></script>
+	<script>
+		$( "#input" ).focus();
+		var input = document.getElementById("input");
+		var output = document.getElementById("result");
+		
+		$("#input").keyup(function(event){
+			if(event.keyCode == 13){
+			$("#menu").click();
+		}});
+		function selector(){
+			if((input.value == "CGG" ) || (input.value == "cgg" )){
+			window.open("CountryGuessingGame.html", "_self");
+			}
+			else if((input.value == "adgame" ) || (input.value == "ADGAME" )){
+			window.open("adGame.html", "_self");
+			}
+			else if((input.value == "thedigger" ) || (input.value == "THEDIGGER" )){
+			window.open("thedigger.html", "_self");
+			}
+			else if((input.value == "manaburn" ) || (input.value == "MANABURN" )){
+			window.open("manaburn/Desktop.html", "_self");
+			}
+			else if((input.value == "dta" ) || (input.value == "DTA" )){
+			window.open("DTA/NewGame/index.html", "_self");
+			}
+			else if((input.value == "video" ) || (input.value == "VIDEO" )){
+			window.open("Clip.html", "_self");
+			}
+			else if((input.value == "fof" ) || (input.value == "FOF" )){
+			window.open("FightorFlight.zip", "_self");
+			}
+			else{
+				output.innerHTML = "No Program of that name sorry"
+			}
+		}
+	</script>
+</html>

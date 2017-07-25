@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<html lang="eng">
+<head>
+	<title>Country Guessing Game</title>
+	<link rel="shortcut icon" href="world.ico"></link>
+	<link rel="stylesheet" type="text/css" href="CGG.css">
+</head>
+<body>
+	
+	<div id="guessBox">
+		<div id="guessBoxText">CAN YOU GUESS THE COUNTRY WE ARE IN?</div>
+		<input id="playerInput" placeholder="Make a guess..."></input>
+		<button id="guessButton" onclick="guesses()"></button>
+	</div>	
+	
+	<div id="map-canvas"></div>
+	<div id="results"></div>
+	<div id="fFact"></div>
+	<div id="scoreBox"></div>
+	<img id="flag" src="flag.png"></img>
+	<div id="winScreen">
+		<p>Game Over!</p>
+		<div id="winScreenText"></div>
+		<button id="newGame" onclick="restart()">New Game</button>
+		<div id="correct"></div>
+		<div id="wrong"></div>
+	</div>
+	
+	
+	<div id="mainMenu">
+		<fieldset id="mapOpt"><legend>Map Options</legend>
+			<input class="mOpt" id="ckRoads" type="checkbox" checked="checked">Roads &nbsp </input>
+			<input class="mOpt" id="ckWater" type="checkbox" checked="checked">Water &nbsp </input>
+			<input class="mOpt" id="ckCities" type="checkbox" checked="checked">Cities </input>
+		</fieldset>
+		<div class="gLgthStyle">
+			<h3>Game Length</h3>
+			<select id="gLength">
+				<option id="shortG" value="5">&nbsp Short (5)</option>
+				<option id="medG" value="10" selected>Medium (10)</option>
+				<option id="longG" value="25">&nbsp Long (25)</option>
+				<option id="maxG" value="238">&nbsp Full (Max)</option>
+			</select>
+		
+			
+		</div>
+		<div id="clues">
+			<fieldset><legend>Clues</legend>
+			<input id="ckCap" type="checkbox" checked="checked">Capitals</input>
+			<br>
+			<input id="ckSize" type="checkbox" checked="checked">Size in  KM&#xB2 </input>
+			<br>
+			<input id="ckReg" type="checkbox" checked="checked">Region &nbsp </input>
+			<br>
+			<input id="ckLang" type="checkbox">Languages</input>
+			<br>
+			<input id="ckInh" type="checkbox">Inhabitants</input>
+			</fieldset>
+		</div>
+		
+		<h2>Game Difficulty</h2>
+		<button class="menu" id="mbEasy" onclick="launch('easy')">[EASY]<br>50 countries</button>
+		<button class="menu" id="mbMedium" onclick="launch('medium')">[MEDIUM]<br>100 countries</button><br>
+		<button class="menu" id="mbHard" onclick="launch('hard')">[HARD]<br>185 countries</button>
+		<button class="menu" id="mbVHard" onclick="launch('harder')">[HARDER]<br>238 countries</button>
+		
+	</div>
+	
+</body>
+
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?AIzaSyDIBGhjFOC9w_Ir-0vXm1akJytkG6kr26k=API_KEY"></script>
+	<script src="jquery.js"></script>
+	<script src="CGG.js"></script>  
+	
+</html>

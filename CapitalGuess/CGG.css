@@ -1,0 +1,300 @@
+
+	html, body,#map-canvas { 
+		height: 100%; margin: 0; padding: 0;
+	}
+	html {
+		background-image: url("mainBG.jpg");
+	}
+	button{
+		
+		font-family: "Comic Sans MS", arial;
+		background-color: Black;
+		color: white;
+		font-size: 24px;
+		width: 250px;
+		height: 75px;
+		margin-top: 10px;
+		margin-left: 10px;
+		margin-right: 10px;
+		border-radius: 10px;		
+	}
+	select{
+		font-family: "Comic Sans MS", arial;
+		background-color: Black;
+		color: white;
+		font-size: 24px;
+		width: 170px;
+		height: 50px;
+		margin-top: 5px;
+		border-radius: 10px;
+		margin-bottom: 10px;
+	}
+	h2{
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	h3{
+		margin-bottom: 10px;
+	}
+	legend{
+		margin-bottom: -10px;
+	}
+	p{
+		text-align: center;
+	}
+	.gLgthStyle{
+		position: absolute;
+		bottom: 5%;
+		left: 8%;
+	}
+	#mbEasy{
+		-webkit-transition: width 0.5s, height 0.5s, background-color 1.25s;
+		-moz-transition: width 0.5s, height 0.5s, background-color 1.25s;
+		transition: width 0.5s, height 0.5s, background-color 1.25s;
+	}
+	#mbEasy:hover{
+		width: 300px;
+		height: 100px;
+		background-color: aqua;
+	}
+	#mbMedium{
+		-webkit-transition: width 0.5s, height 0.5s, background-color 1.25s;
+		-moz-transition: width 0.5s, height 0.5s, background-color 1.25s;
+		transition: width 0.5s, height 0.5s, background-color 1.25s;
+	}
+	#mbMedium:hover{
+		width: 300px;
+		height: 100px;
+		background-color: green;
+	}
+	#mbHard{
+		-webkit-transition: width 0.5s, height 0.5s, background-color 1.25s;
+		-moz-transition: width 0.5s, height 0.5s, background-color 1.25s;
+		transition: width 0.5s, height 0.5s, background-color 1.25s;
+	}
+	#mbHard:hover{
+		width: 300px;
+		height: 100px;
+		background-color: orangeRed;
+	}
+	#mbVHard{
+		-webkit-transition: width 0.5s, height 0.5s, background-color 1.25s;
+		-moz-transition: width 0.5s, height 0.5s, background-color 1.25s;
+		transition: width 0.5s, height 0.5s, background-color 1.25s;
+	}
+	#mbVHard:hover{
+		width: 300px;
+		height: 100px;
+		background-color: red;
+	}
+	#mainMenu{
+		font-family: "Comic Sans MS", arial;
+		font-color: black;
+		font-size: 24px;
+		position: absolute;
+	
+		height: 490px;
+		width: 650px;
+		text-align: center;
+		background: -webkit-linear-gradient(left, #111111 , #333333);  
+		background: -o-linear-gradient(right, #111111, #333333);  
+		background: -moz-linear-gradient(right, #111111, #333333);  
+		background: linear-gradient(to right, #111111 , #333333); 
+		border-style: solid;
+		border-radius: 5px;
+		z-index: 3;
+		visibility: visible;
+	}
+	#clues{
+		text-align: left;
+		position: absolute;
+		bottom: 5%;
+		right: 5%;
+	}	
+	#mapOpt{
+		position: absolute;
+		bottom: 32%;
+		left: 8%;
+	}
+	#scoreBox {
+		top: 1%;
+		right: 1%;
+		width: auto;
+		height: auto;
+		background: -webkit-linear-gradient(left,#111111 , #333333);  
+		background: -o-linear-gradient(right, #111111 ,#333333);  
+		background: -moz-linear-gradient(right,#111111 , #333333);  
+		background: linear-gradient(to right,#111111 ,#333333); 
+		position: absolute;
+		z-index: 2;
+		text-align: center;
+		font-family: "Comic Sans MS", arial;
+		color: white;
+		font-size: 38px;
+		border-color: black;
+		border-style: solid;
+		border-radius: 5px;
+		visibility: hidden;
+	}
+	#winScreen{
+		font-family: "Comic Sans MS", arial;
+		color: white;
+		font-size: 24px;
+		position: absolute;
+		height: 600px;
+		width: 600px;
+		text-align: left;
+		padding-left: 20px;
+		background: -webkit-linear-gradient(left,#111111 , #333333);  
+		background: -o-linear-gradient(right, #111111 ,#333333);  
+		background: -moz-linear-gradient(right,#111111 , #333333);  
+		background: linear-gradient(to right,#111111 ,#333333); 
+		border-style: solid;
+		border-radius: 5px;
+		z-index: 5;
+		visibility: hidden;
+	}
+	#newGame{
+		font-family: "Comic Sans MS", arial;
+		font-size: 38px;
+		color: white;
+		position: absolute;
+		bottom: 5%;
+		left: 175px;
+		border-radius: 5px;
+		border-style: solid;
+		border-color: black;
+		border-width: 6px;
+		visibility: hidden;
+		z-index: 6;
+	}
+	#flag{
+		position: absolute;
+		z-index: 2;
+		height: 100px;
+		width: 40px;
+		top: 40%;
+		left: 50.1%;
+		visibility: hidden;
+	}
+	#guessBox{
+		font-family: "Comic Sans MS", arial;
+		color: white;
+		font-size: 24px;
+		text-align: center;
+		height: auto;
+		width: 650px;
+		border: 5px;
+		border-color: black;
+		border-style: solid;
+		border-radius: 5px;
+		background: -webkit-linear-gradient(left,#111111 , #333333);  
+		background: -o-linear-gradient(right, #111111 ,#333333);  
+		background: -moz-linear-gradient(right,#111111 , #333333);  
+		background: linear-gradient(to right,#111111 ,#333333); 
+		position: absolute;
+		z-index: 1;
+		visibility: hidden;
+		opacity: 0.7;
+		filter: alpha(opacity=70);
+		
+	}
+	#playerInput {
+		height: auto;
+		width: 50%;
+		position: absolute;
+		bottom: 15%;
+		border-radius: 5px;
+		border-style: solid;
+		left: 25%;
+		visibility: inherit;
+		z-index: 5;
+		color: white;
+		background-color: black;
+	}
+	#guessButton{
+		visibility: hidden;
+	}
+	#results {
+		font-family: "Comic Sans MS", arial;
+		color: white;
+		font-size: 20px;
+		text-align: center;
+		position: absolute;
+		left: 1%;
+		top: 1%;
+		z-index: 1;
+		background: -webkit-linear-gradient(left,#111111 , #333333);  
+		background: -o-linear-gradient(right, #111111 ,#333333);  
+		background: -moz-linear-gradient(right,#111111 , #333333);  
+		background: linear-gradient(to right,#111111 ,#333333); 
+		width: 300px;
+		height: auto;
+		border-color: black;
+		border-style: solid;
+		border-radius: 5px;
+		visibility: hidden;
+	}
+	#wrong{
+	height: auto;
+	width: 400px;
+	position: absolute;
+	top: 10%;
+	right: -420px;
+	text-align: center;
+	background: -webkit-linear-gradient(left,#111111 , #333333);  
+	background: -o-linear-gradient(right, #111111 ,#333333);  
+	background: -moz-linear-gradient(right,#111111 , #333333);  
+	background: linear-gradient(to right,#111111 ,#333333); 
+	border-style: solid;
+	border-radius: 5px;
+	}
+	#correct{
+	height: auto;
+	width: 400px;
+	position: absolute;
+	top: 10%;
+	left: -420px;
+	background: -webkit-linear-gradient(left,#111111 , #333333);  
+	background: -o-linear-gradient(right, #111111 ,#333333);  
+	background: -moz-linear-gradient(right,#111111 , #333333);  
+	background: linear-gradient(to right,#111111 ,#333333); 
+	border-style: solid;
+	border-radius: 5px;
+	}
+	#ff{
+		position: absolute;
+		bottom: 5%;
+		left: 38%;
+	}
+	#fFact{
+		font-family: "Comic Sans MS", arial;
+		color: white;
+		font-size: 8px;
+		text-align: center;
+		position: absolute;
+		right: 1%;
+		top: 40%;
+		z-index: 1;
+		background: -webkit-linear-gradient(left,#111111 , #333333);  
+		background: -o-linear-gradient(right, #111111 ,#333333);  
+		background: -moz-linear-gradient(right,#111111 , #333333);  
+		background: linear-gradient(to right,#111111 ,#333333); 
+		-webkit-transition: font-size 0s, height 0s, background-color 1.25s;
+		-moz-transition: font-size 0s, height 0s, background-color 1.25s;
+		transition: font-size 0s, height 0s, background-color 1.25s;
+		width: 150px;
+		height: auto;
+		border-radius: 50%;
+		padding: 29px;
+		visibility: hidden;
+	}
+	#fFact:hover{
+		width: 300px;
+		font-size: 20px;
+		background: -webkit-linear-gradient(left,#1122EE , #111144);  
+		background: -o-linear-gradient(right, #1122EE ,#111144);  
+		background: -moz-linear-gradient(right,#1122EE , #111144);  
+		background: linear-gradient(to right,#1122EE ,#111144); 
+	}
+	

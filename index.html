@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<html lang="eng">
+
+<head>
+	<title>Leo Quint Games</title>
+	<link rel="shortcut icon" href="leo.ico"></link>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"></link>
+	
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"/><!--  load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"/> <!-- load fontawesome -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-route.min.js">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="javascript/youtubeEmb.js"></script>
+
+    <script src="javascript/app.js"></script>
+    <style>
+        body        { padding-top:80px; }
+    </style>
+</head>
+
+<body ng-app="leoquintApp">
+    <!--Navigation Bar -->
+
+
+    <div ng-include="'views/navbar.html'" scope="" onload=""></div>
+
+
+    <div ng-view></div>
+
+
+  
+</body>
+</html>
+

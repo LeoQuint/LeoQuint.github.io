@@ -1,0 +1,16 @@
+va1.2
+---------
+-added bonus point system
+-added most flags to the flagName.kml // unfortunatly it wont work due to google map restrictions
+-fixed aesthetics 
+Va1.1
+---------
+-Added delay on enter keydown to prevent spaming.
+-added game length selection
+-added optional clues
+-added optional layers
+-added mark % 
+
+Va1.0
+---------
+edited 2015/03/05
